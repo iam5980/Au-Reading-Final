@@ -1,10 +1,12 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Audrey Reading Oral Practice</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <style>
 :root{--bg:#f2f6fa;--surface:#ffffff;--ink:#16263b;--mute:#5a6b80;--title:#0f2547;--line:#cfdbe7;--soft:#e6edf4;--chip:#2b8fd8;--navy:#0f2547;--navy2:#1b3a6b;--ok:#17834a;--okbg:#e1f5e9;--red:#c63a3a;--purple:#f1eaff;--purpleln:#b9a2ee;--purpleink:#4a2f86;--est:#fde68a;--estink:#6b4a00}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0b1625;--surface:#132338;--ink:#e5eef8;--mute:#9cb0c6;--title:#d3e6fb;--line:#2b4464;--soft:#1c3150;--chip:#2f8fdc;--navy:#2c5ca5;--navy2:#13305a;--ok:#4fd08a;--okbg:#123726;--red:#ff7b7b;--purple:#251b3d;--purpleln:#56428a;--purpleink:#d9c8ff;--est:#4a3c0c;--estink:#ffe08a;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0b1625;--surface:#132338;--ink:#e5eef8;--mute:#9cb0c6;--title:#d3e6fb;--line:#2b4464;--soft:#1c3150;--chip:#2f8fdc;--navy:#2c5ca5;--navy2:#13305a;--ok:#4fd08a;--okbg:#123726;--red:#ff7b7b;--purple:#251b3d;--purpleln:#56428a;--purpleink:#d9c8ff;--est:#4a3c0c;--estink:#ffe08a;color-scheme:dark}
+@media (prefers-color-scheme: dark){:root{--bg:#0b1625;--surface:#132338;--ink:#e5eef8;--mute:#9cb0c6;--title:#d3e6fb;--line:#2b4464;--soft:#1c3150;--chip:#2f8fdc;--navy:#2c5ca5;--navy2:#13305a;--ok:#4fd08a;--okbg:#123726;--red:#ff7b7b;--purple:#251b3d;--purpleln:#56428a;--purpleink:#d9c8ff;--est:#4a3c0c;--estink:#ffe08a;color-scheme:dark}}
 *{box-sizing:border-box}
 body{margin:0;font-family:"Avenir Next","Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:1.1rem;line-height:1.5}
 header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:18px max(16px,env(safe-area-inset-right,0px)) 18px max(16px,env(safe-area-inset-left,0px))}
@@ -39,9 +41,15 @@ label.btn{display:inline-flex;align-items:center}
 .heard{color:var(--mute);font-size:.95rem;font-style:italic;display:block;margin-top:4px}
 .small{color:var(--mute);font-size:.92rem}
 </style>
+</head>
+<body>
 <header><h1>🎤 Reading Oral Practice</h1><p>I Wanna Iguana · Daddy Lost His Job · Oral test in Week 8–9 (10%)</p></header>
 <main>
-<div class="notice">🎙️ Recording requires Safari or Chrome — not inside another app (LINE, Messenger, etc.).</div>
+<div style="background:#1a0a2a;border:2px solid #a855f7;color:#e9d5ff;border-radius:12px;padding:14px 16px;margin-bottom:16px;font-size:0.9rem;line-height:1.7;">
+ <strong style="color:#c084fc;">🎙️ Recording requires Safari or Chrome</strong><br>
+ Please open this file in Safari (iOS) or Chrome — not inside another app.<br>
+ iOS: tap ··· then Open in Safari &nbsp;|&nbsp; Android/PC: open in Chrome
+</div>
 <div class="note">These <b>14 questions are estimated</b> from the stories, because no official Oral sheet was given. Please confirm with the teacher. For each card: listen to the question, record your answer, then tap <b>Reveal Answer</b> and score yourself.</div>
 <div id="list"></div>
 </main>
@@ -49,21 +57,20 @@ label.btn{display:inline-flex;align-items:center}
 var ORAL = [{"q":"What is the title of the first story, and who is the author?","m":"The title is I Wanna Iguana, and the author is Karen Kaufman Orloff.","k":["iguana","orloff|karen"],"st":"iguana"},{"q":"What is the genre of I Wanna Iguana? What does it mean?","m":"The genre is realistic fiction. It is a made-up story that could really happen.","k":["realistic fiction","made-up|made up","could|happen"],"st":"iguana"},{"q":"What is an illustrator?","m":"An illustrator is a person who draws the pictures for a story.","k":["draw|draws|drew","picture"],"st":"both"},{"q":"Why does Alex write letters to his mom?","m":"Alex writes letters to persuade his mom to let him have Mikey's baby iguana.","k":["persuade|ask|want","iguana"],"st":"iguana"},{"q":"What reasons does Alex give to get the iguana?","m":"He says iguanas are quiet and cute, and he will feed it and clean its cage.","k":["quiet|cute","feed|lettuce","clean|cage"],"st":"iguana"},{"q":"What is a trial basis?","m":"A trial basis means Mom and Dad see how well Alex takes care of the iguana for a week or two.","k":["week","take care|care"],"st":"iguana"},{"q":"Would you like an iguana as a pet? Why or why not?","m":"Yes, I would like an iguana because it is quiet and cute. / No, I wouldn't, because it can grow over six feet long.","k":["i would|i wouldn't|yes|no","because"],"st":"iguana"},{"q":"Who wrote Daddy Lost His Job, and who drew the pictures?","m":"Jennifer Moore-Mallinos wrote the story, and Gustavo Mazali drew the pictures.","k":["jennifer|mallinos","gustavo|mazali"],"st":"daddy"},{"q":"Why did Dad lose his job?","m":"Dad lost his job because his company was trying to save money.","k":["company","save|money"],"st":"daddy"},{"q":"What is Operation Save?","m":"Operation Save is the children's plan to save money by spending less.","k":["plan","save|money","spend less|spending less"],"st":"daddy"},{"q":"What is the difference between a want and a need? Give an example.","m":"A want is something you wish for, like a new video game. A need is something you must have, like food and water.","k":["want","need","food|water|air|home"],"st":"daddy"},{"q":"How can you save money? Give two examples.","m":"I can make my own lunches, and I can stop buying things I don't really need.","k":["lunch|buy|spend|reuse|old","i can|i"],"st":"daddy"},{"q":"How did the story Daddy Lost His Job end?","m":"Dad got a new job, Mom still looks after the neighborhood kids, and Operation Save became a way of life.","k":["new job|job","operation save|save"],"st":"daddy"},{"q":"What lesson did you learn from Daddy Lost His Job?","m":"I learned that we should never give up and we should be careful about how we spend money.","k":["never give up|give up","spend|money|save"],"st":"daddy"}];
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
 function norm(s){return String(s).toLowerCase().replace(/[’‘]/g,"'").replace(/-/g," ").replace(/[^a-z0-9' ]/g," ").replace(/\s+/g," ").trim()}
-function speak(text,rate,pitch){
+var _voices=[];
+if(window.speechSynthesis){speechSynthesis.addEventListener("voiceschanged",function(){_voices=speechSynthesis.getVoices()});if(_voices.length===0)_voices=speechSynthesis.getVoices()}
+function getBestVoice(){
+ var voices=_voices.length?_voices:speechSynthesis.getVoices();
+ var priority=[function(v){return v.name==="Samantha"},function(v){return v.name==="Karen"},function(v){return v.name==="Daniel"},function(v){return v.name.indexOf("Google US English")>=0},function(v){return v.name.indexOf("Google UK English")>=0},function(v){return v.lang==="en-US"&&v.localService},function(v){return v.lang==="en-GB"&&v.localService},function(v){return v.lang.indexOf("en")===0&&v.localService},function(v){return v.lang.indexOf("en")===0}];
+ for(var t=0;t<priority.length;t++){var m=voices.filter(priority[t])[0];if(m)return m}
+ return null;
+}
+function speak(text,rate){
  if(!window.speechSynthesis)return;
- rate=rate||0.88;pitch=pitch||1.0;
  window.speechSynthesis.cancel();
- var utter=new SpeechSynthesisUtterance(text);utter.lang="en-US";utter.rate=rate;utter.pitch=pitch;
- function setVoiceAndSpeak(){
-  var voices=window.speechSynthesis.getVoices();
-  var preferred=["Samantha","Karen","Google US English","Microsoft Aria Online (Natural)"];var chosen=null;
-  for(var p=0;p<preferred.length&&!chosen;p++){chosen=voices.filter(function(v){return v.name===preferred[p]})[0]||null}
-  if(!chosen)chosen=voices.filter(function(v){return v.lang==="en-US"})[0]||voices[0]||null;
-  if(chosen)utter.voice=chosen;
-  window.speechSynthesis.speak(utter);
- }
- if(window.speechSynthesis.getVoices().length>0)setVoiceAndSpeak();
- else window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.onvoiceschanged=null;setVoiceAndSpeak()};
+ var utter=new SpeechSynthesisUtterance(text);
+ utter.voice=getBestVoice();utter.lang="en-US";utter.rate=rate||0.88;utter.pitch=1.0;
+ window.speechSynthesis.speak(utter);
 }
 var state={},html="";
 ORAL.forEach(function(o,i){
@@ -91,7 +98,7 @@ function showRevealFallback(i,msg){
  document.getElementById("m"+i).innerHTML=esc(msg)+' Use your device recorder instead: tap a button, record, then tap <b>Use</b> or <b>Done</b>.<br>'+
  '<label class="btn r" for="ca'+i+'">🎙 Record Voice</label><label class="btn n" for="cv'+i+'">📹 Record Video</label>'+
  '<input type="file" id="ca'+i+'" accept="audio/*" capture hidden onchange="gotClip('+i+',this)"><input type="file" id="cv'+i+'" accept="video/*" capture="user" hidden onchange="gotClip('+i+',this)">'+
- '<div id="clip'+i+'"></div><button class="btn g" onclick="document.getElementById(\'v'+i+'\').hidden=false">🗣 Skip — I said it out loud</button>';
+ '<div id="clip'+i+'"></div>';
 }
 function gotClip(i,inp){
  var f=inp.files&&inp.files[0];if(!f)return;
@@ -149,5 +156,5 @@ function upd(i){
  document.getElementById("g"+i).textContent=c+" / "+tot+" pts · "+p+"% · "+(p>=90?"🌟 Outstanding":p>=75?"😊 Good":p>=55?"📝 Getting there":"💪 Keep going");
 }
 </script>
-
-</body></html>
+</body>
+</html>
